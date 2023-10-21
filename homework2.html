@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        li {
+            list-style-type: none;
+        }
+
+        .indicators li {
+
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: solid rgb(87, 82, 82);
+            display: inline-block;
+        }
+
+        .active {
+            background-color: rgb(87, 82, 82);
+        }
+
+        .slyder {
+            text-align: center;
+        }
+        .item{
+            display: none;
+        }
+        .change{
+            display: block;
+        }
+    </style>
+    <div class="slyder">
+        <div class="carusel-box">
+            <div class="item change" data-slide-to="0">
+                <img src="./img/kotik_1.jpg" alt="...">
+              </div>
+              <div class="item" data-slide-to="1">
+                <img src="./img/212232_97.jpg" alt="...">
+              </div>
+              <div class="item " data-slide-to="2">
+                <img src="./img/Animals___Cats_Very_small_Siamese_cat_sitting_on_a_stone_045624_.jpg" alt="..." width = '800px' height = '600px'>
+              </div>
+        </div>
+        <ul class="indicators">
+            <li data-slide-to="0" class="indicatorsItem active"></li>
+            <li data-slide-to="1" class="indicatorsItem"></li>
+            <li data-slide-to="2" class="indicatorsItem"></li>
+        </ul>
+    </div>
+    <div class="slyder">
+        <button class="prev">Предыдущее изображение</button>
+        <button class="next">Следующее изображение</button>
+    </div>
+
+    <script src="homework2.js"></script>
+</body>
+
+</html>
